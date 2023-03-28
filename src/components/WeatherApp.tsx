@@ -1,5 +1,5 @@
 import {useState } from 'react';
-import axios from 'axios';
+import Axios from 'axios';
 import { withAITracking } from '@microsoft/applicationinsights-react-js';
 import { reactPlugin} from '../services/appInsights';
 
@@ -13,7 +13,7 @@ function WeatherApp(){
 
     const handleClick = ()=>{
 
-        axios.get(baseUrl).then(
+        Axios.get(baseUrl).then(
             (response) =>{
                 setWeather(JSON.stringify(response));
             }
