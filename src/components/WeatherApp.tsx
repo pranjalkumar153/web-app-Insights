@@ -17,7 +17,8 @@ function WeatherApp(){
             (response) =>{
                 setWeather(JSON.stringify(response));
             }
-        ).catch((error)=>{setWeather('Could not retrieve Data')})
+        ).catch((error)=>{setWeather('Could not retrieve Data');
+                            console.log(error);})
     }
     
     return(

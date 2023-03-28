@@ -1,6 +1,5 @@
-import React from 'react';
 import { ApplicationInsights } from '@microsoft/applicationinsights-web';
-import { ReactPlugin, withAITracking } from '@microsoft/applicationinsights-react-js';
+import { ReactPlugin} from '@microsoft/applicationinsights-react-js';
 import { createBrowserHistory } from "history";
 
 const browserHistory = createBrowserHistory();
