@@ -1,7 +1,7 @@
-import React, { useCallback, useEffect, useState } from 'react';
+import {useState } from 'react';
 import axios from 'axios';
 import { withAITracking } from '@microsoft/applicationinsights-react-js';
-import { reactPlugin, appInsights} from '../services/appInsights';
+import { reactPlugin} from '../services/appInsights';
 
 
 function WeatherApp(){
